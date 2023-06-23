@@ -1,0 +1,15 @@
+LOAD 0
+STORE F_5
+LOAD 0
+STORE g_3
+READ F_5
+READ g_3
+LOAD F_5
+BRZNEG negative
+WRITE F_5
+BR end
+negative: WRITE g_3
+end: NOOP
+STOP
+F_5 0
+g_3 0
